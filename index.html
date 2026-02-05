@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
- 		<meta charset="utf-8">
-		<a id=#><title>Romantikstadt Steyr</title></a>
-		<style>
+<head>
+<meta charset="utf-8">
+<a id=#><title>Romantikstadt Steyr</title></a>
+<style>
 body		{font-family: Bahnschrift; background-color: #E3E3E3; }
 header		{font-family: Calisto MT;}
 nav		{font-family: Bahnschrift; color: #E3E3E3; background-color: #007baf; }
@@ -13,38 +13,95 @@ h2		{font-family: Calisto MT; color: #007baf; font-weight: bold; font-size: 22 p
 h3 		{font-size: 18 px; }
 p 		{color: #585858; }
 ul		{color: #424242;}
-		</style>
-	</head>
-	<body>
+ 
+/* ===== DARK MODE BUTTON ===== */
+#darkModeBtn {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	padding: 8px 12px;
+	background-color: #007baf;
+	color: #E3E3E3;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+}
+ 
+/* ===== DARK MODE ===== */
+body.darkmode {
+	background-color: #121212;
+}
+ 
+body.darkmode p,
+body.darkmode ul {
+	color: #d0d0d0;
+}
+ 
+body.darkmode h1,
+body.darkmode h2 {
+	color: #66c2ff;
+}
+ 
+body.darkmode nav {
+	background-color: #003f5c;
+}
+ 
+body.darkmode a {
+	color: #e0e0e0;
+}
+</style>
+</head>
+<body>
+ 
+	<!-- DARK MODE BUTTON -->
+<button id="darkModeBtn">🌙 Dark Mode</button>
+ 
 		<header>
-		<h1>Willkommen in Steyr <img src="bilder/logo steyr ohne hintergrund.png" alt="logo" hspace="15" height="30" align="right"></h1>
-		</header>
-		<nav>
-		<h3>
-		 <a href="https://www.steyr-nationalpark.at/orte/region/gastronomie-steyr.html"> Gastronomie</a> | <a href="https://www.steyr-nationalpark.at/orte/region/unterkuenfte-steyr.html"> Unterkünfte </a>| <a href="https://www.steyr-nationalpark.at/advent.html"> Advent in Steyr </a>| <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">Steyr Moments - Angebot</a><p></p></h3>
-		</nav>
-		<main>
-		<h2>Steyr am Nationalpark – natürlich romantisch!</h2>
-		<p>Steyr am Nationalpark, reich an Kultur, Industrie, Natur und Architektur ist eine lebens- und liebenswerte Kleinstadt. Die 1000-jährige Stadt liegt inmitten der Österreichischen Romantikstraße zwischen Salzburg und Wien und ist ein wahres Architekturjuwel. Am historischen Stadtplatz reihen sich Bürgerhäuser aus verschiedenen Stilepochen harmonisch aneinander.  Malerisch ist der Zusammenfluss von Enns und Steyr unterhalb des Schlosses, die beiden Flüsse bestimmen seit Jahrhunderten die Entwicklung der Stadt.
+<h1>Willkommen in Steyr <img src="bilder/logo steyr ohne hintergrund.png" alt="logo" hspace="15" height="30" align="right"></h1>
+</header>
+<nav>
+<h3>
+<a href="https://www.steyr-nationalpark.at/orte/region/gastronomie-steyr.html"> Gastronomie</a> | <a href="https://www.steyr-nationalpark.at/orte/region/unterkuenfte-steyr.html"> Unterkünfte </a>| <a href="https://www.steyr-nationalpark.at/advent.html"> Advent in Steyr </a>| <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">Steyr Moments - Angebot</a><p></p></h3>
+</nav>
+<main>
+<h2>Steyr am Nationalpark – natürlich romantisch!</h2>
+<p>Steyr am Nationalpark, reich an Kultur, Industrie, Natur und Architektur ist eine lebens- und liebenswerte Kleinstadt. Die 1000-jährige Stadt liegt inmitten der Österreichischen Romantikstraße zwischen Salzburg und Wien und ist ein wahres Architekturjuwel. Am historischen Stadtplatz reihen sich Bürgerhäuser aus verschiedenen Stilepochen harmonisch aneinander.  Malerisch ist der Zusammenfluss von Enns und Steyr unterhalb des Schlosses, die beiden Flüsse bestimmen seit Jahrhunderten die Entwicklung der Stadt.
 Erleben Sie das besondere Flair der Stadt Steyr und überzeugen Sie sich selbst von der harmonischen Symbiose zwischen traditionsreicher Vergangenheit und pulsierender Gegenwart!
-		</p>
-		<p> 
-		</p>
-		<p align="center"><img src="bilder/zweifluesseestadt.jpg" alt="stift" hspace="15" height="170"> <img src="bilder/stadtplatz.jpg" alt="fischkalter" hspace="15" height="170"> <img src="bilder/panoramalift.jpg" alt="bibliothek" hspace="15" height="170"></p>
-		<h2>In Steyr ist immer was los - entscheiden Sie sich für eine dieser Aktivitäten:</h2>
-		<ul>
-		<li><b>Vom höchsten Turm in den tiefsten Keller</b><br>
+</p>
+<p> 
+</p>
+<p align="center"><img src="bilder/zweifluesseestadt.jpg" alt="stift" hspace="15" height="170"> <img src="bilder/stadtplatz.jpg" alt="fischkalter" hspace="15" height="170"> <img src="bilder/panoramalift.jpg" alt="bibliothek" hspace="15" height="170"></p>
+<h2>In Steyr ist immer was los - entscheiden Sie sich für eine dieser Aktivitäten:</h2>
+<ul>
+<li><b>Vom höchsten Turm in den tiefsten Keller</b><br>
 Begleiten Sie die Steyrer Nachtwächter auf Zeitreise in die Vergangenheit und lauschen Sie ihren Gschichtln und Anekdoten!</li>
-		<li><b>Steyr erschweben</b><br>
+<li><b>Steyr erschweben</b><br>
 Der Sprung vom Mittelalter ins Hightech-Zeitalter gelingt in Steyr mühelos beim lautlosen Schweben auf den Segways, den ultimativen Kult-Rollern! </li>
-		<li><b>Ein Eldorado für Naturliebhaber</b><br>
+<li><b>Ein Eldorado für Naturliebhaber</b><br>
 In nur 30 Autominuten erreicht man das Besucherzentrum Ennstal, den idealen Ausgangspunkt für alle Touren in den Nationalpark Kalkalpen.</li>
-		<li><b>Advent in Steyr</b><br>
+<li><b>Advent in Steyr</b><br>
 		In der Adventzeit verwandelt sich Steyr zu Österreichs offizieller Christkindlstadt. Das Postamt und die Wallfahrtskirche in Christkindl, das Steyrer Kripperl oder das Weihnachtsmuseum mit Erlebnisbahn sind nur einige der vorweihnachtlichen Attraktionen.</li>
-		</ul>
-		<p align=center><img src="bilder/nationalpark kalkalpen.jpg" alt="kultur" hspace="15" height="185"> <img src="bilder/nachtwaechter.jpg" alt="kultur" hspace="15" height="185"> <img src="bilder/christkindl.jpg" alt="sternwarte" hspace="15" height="185"></p>
-		<h2 align=center>Es gibt viel zu entdecken bei uns, wir freuen uns auf Ihren Besuch!</h2>
-		</main>
-		<p align=right><a href="#"><img src="bilder/pfeil.png" alt="pfeil" height="50"></a></p>
+</ul>
+<p align=center><img src="bilder/nationalpark kalkalpen.jpg" alt="kultur" hspace="15" height="185"> <img src="bilder/nachtwaechter.jpg" alt="kultur" hspace="15" height="185"> <img src="bilder/christkindl.jpg" alt="sternwarte" hspace="15" height="185"></p>
+<h2 align=center>Es gibt viel zu entdecken bei uns, wir freuen uns auf Ihren Besuch!</h2>
+</main>
+<p align=right><a href="#"><img src="bilder/pfeil.png" alt="pfeil" height="50"></a></p>
+ 
+	<!-- DARK MODE SCRIPT -->
+<script>
+		const button = document.getElementById("darkModeBtn");
+ 
+		button.addEventListener("click", () => {
+			document.body.classList.toggle("darkmode");
+ 
+			if (document.body.classList.contains("darkmode")) {
+				button.textContent = "☀️ Light Mode";
+			} else {
+				button.textContent = "🌙 Dark Mode";
+			}
+		});
+</script>
+ 
 	</body>
 </html>
