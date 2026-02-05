@@ -5,71 +5,74 @@
     <title>Romantikstadt Steyr</title>
 
     <style>
-        /* Light Mode (Standard) */
+        :root {
+            --bg: #E3E3E3;
+            --text: #585858;
+            --headline: #007baf;
+            --navbg: #007baf;
+            --navtext: #E3E3E3;
+        }
+
+        body.dark {
+            --bg: #121212;
+            --text: #E0E0E0;
+            --headline: #4da3ff;
+            --navbg: #1f1f1f;
+            --navtext: #ffffff;
+        }
+
         body {
             font-family: Bahnschrift;
-            background-color: #E3E3E3;
-            color: #585858;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
         }
 
-        header { font-family: Calisto MT; }
-
-        nav {
-            font-family: Bahnschrift;
-            background-color: #007baf;
-            color: #E3E3E3;
+        header {
+            font-family: Calisto MT;
+            padding: 20px;
         }
 
-        a { color: #E3E3E3; }
+        nav {
+            background-color: var(--navbg);
+            color: var(--navtext);
+            padding: 15px;
+        }
+
+        a {
+            color: var(--navtext);
+            text-decoration: none;
+        }
 
         h1 {
-            font-family: Calisto MT;
-            color: #007baf;
+            color: var(--headline);
             font-size: 44px;
         }
 
         h2 {
-            font-family: Calisto MT;
-            color: #007baf;
-            font-weight: bold;
+            color: var(--headline);
             font-size: 22px;
+            font-weight: bold;
         }
 
-        h3 { font-size: 18px; }
-
-        ul { color: #424242; }
-
-        /* Dark Mode */
-        body.dark {
-            background-color: #121212;
-            color: #E0E0E0;
+        h3 {
+            font-size: 18px;
         }
 
-        body.dark nav {
-            background-color: #1f1f1f;
+        ul {
+            color: var(--text);
         }
 
-        body.dark a {
-            color: #ffffff;
+        main {
+            padding: 20px;
         }
 
-        body.dark h1,
-        body.dark h2 {
-            color: #4da3ff;
-        }
-
-        body.dark ul {
-            color: #E0E0E0;
-        }
-
-        /* Button */
         button {
             position: fixed;
             top: 15px;
             right: 15px;
             padding: 10px 15px;
-            background-color: #007baf;
+            background-color: var(--headline);
             color: white;
             border: none;
             border-radius: 5px;
@@ -85,7 +88,7 @@
 <header>
     <h1>
         Willkommen in Steyr
-        <img src="bilder/logo steyr ohne hintergrund.png" alt="logo" hspace="15" height="30" align="right">
+        <img src="bilder/logo steyr ohne hintergrund.png" height="30" align="right">
     </h1>
 </header>
 
@@ -94,9 +97,7 @@
         <a href="https://www.steyr-nationalpark.at/orte/region/gastronomie-steyr.html">Gastronomie</a> |
         <a href="https://www.steyr-nationalpark.at/orte/region/unterkuenfte-steyr.html">Unterkünfte</a> |
         <a href="https://www.steyr-nationalpark.at/advent.html">Advent in Steyr</a> |
-        <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">
-            Steyr Moments - Angebot
-        </a>
+        <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">Steyr Moments</a>
     </h3>
 </nav>
 
