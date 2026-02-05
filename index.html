@@ -1,150 +1,50 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Romantikstadt Steyr</title>
-
-    <style>
-        /* ===== Farbvariablen ===== */
-        :root {
-            --bg-color: #E3E3E3;
-            --text-color: #585858;
-            --headline-color: #007baf;
-            --nav-bg: #007baf;
-            --nav-text: #E3E3E3;
-        }
-
-        /* ===== Dark Mode ===== */
-        body.dark {
-            --bg-color: #121212;
-            --text-color: #E0E0E0;
-            --headline-color: #4da3ff;
-            --nav-bg: #1f1f1f;
-            --nav-text: #ffffff;
-        }
-
-        body {
-            font-family: Bahnschrift;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-        }
-
-        header {
-            font-family: Calisto MT;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: var(--nav-bg);
-            color: var(--nav-text);
-            padding: 15px;
-        }
-
-        a {
-            color: var(--nav-text);
-            text-decoration: none;
-        }
-
-        h1 {
-            color: var(--headline-color);
-            font-size: 44px;
-        }
-
-        h2 {
-            color: var(--headline-color);
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-
-        ul {
-            color: var(--text-color);
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        /* ===== Dark Mode Button ===== */
-        .darkmode-btn {
-            position: fixed;
-            top: 15px;
-            right: 15px;
-            padding: 10px 15px;
-            background-color: var(--headline-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .darkmode-btn:hover {
-            opacity: 0.8;
-        }
-    </style>
-</head>
-
-<body>
-
-<button class="darkmode-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-
-<header>
-    <h1>
-        Willkommen in Steyr
-        <img src="bilder/logo steyr ohne hintergrund.png" alt="logo" height="30" align="right">
-    </h1>
-</header>
-
-<nav>
-    <h3>
-        <a href="https://www.steyr-nationalpark.at/orte/region/gastronomie-steyr.html">Gastronomie</a> |
-        <a href="https://www.steyr-nationalpark.at/orte/region/unterkuenfte-steyr.html">Unterkünfte</a> |
-        <a href="https://www.steyr-nationalpark.at/advent.html">Advent in Steyr</a> |
-        <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">
-            Steyr Moments
-        </a>
-    </h3>
-</nav>
-
-<main>
-    <h2>Steyr am Nationalpark – natürlich romantisch!</h2>
-    <p>
-        Steyr am Nationalpark, reich an Kultur, Industrie, Natur und Architektur ist eine lebens-
-        und liebenswerte Kleinstadt...
-    </p>
-
-    <p align="center">
-        <img src="bilder/zweifluesseestadt.jpg" height="170">
-        <img src="bilder/stadtplatz.jpg" height="170">
-        <img src="bilder/panoramalift.jpg" height="170">
-    </p>
-
-    <h2>In Steyr ist immer was los:</h2>
-    <ul>
-        <li><b>Vom höchsten Turm in den tiefsten Keller</b></li>
-        <li><b>Steyr erschweben</b></li>
-        <li><b>Ein Eldorado für Naturliebhaber</b></li>
-        <li><b>Advent in Steyr</b></li>
-    </ul>
-</main>
-
-<script>
-    function toggleDarkMode() {
-        document.body.classList.toggle("dark");
-
-        const btn = document.querySelector(".darkmode-btn");
-        if (document.body.classList.contains("dark")) {
-            btn.textContent = "☀️ Light Mode";
-        } else {
-            btn.textContent = "🌙 Dark Mode";
-        }
-    }
-</script>
-
-</body>
+	<head>
+ 		<meta charset="utf-8">
+		<a id=#><title>Romantikstadt Steyr</title></a>
+		<style>
+body		{font-family: Bahnschrift; background-color: #E3E3E3; }
+header		{font-family: Calisto MT;}
+nav		{font-family: Bahnschrift; color: #E3E3E3; background-color: #007baf; }
+a		{color: #E3E3E3; }
+h1		{font-family: Calisto MT; color: #007baf; font-size: 44 px}
+h2		{font-family: Calisto MT; color: #007baf; font-weight: bold; font-size: 22 px;}
+h3 		{font-size: 18 px; }
+p 		{color: #585858; }
+ul		{color: #424242;}
+		</style>
+	</head>
+	<body>
+		<header>
+		<h1>Willkommen in Steyr <img src="bilder/logo steyr ohne hintergrund.png" alt="logo" hspace="15" height="30" align="right"></h1>
+		</header>
+		<nav>
+		<h3>
+		 <a href="https://www.steyr-nationalpark.at/orte/region/gastronomie-steyr.html"> Gastronomie</a> | <a href="https://www.steyr-nationalpark.at/orte/region/unterkuenfte-steyr.html"> Unterkünfte </a>| <a href="https://www.steyr-nationalpark.at/advent.html"> Advent in Steyr </a>| <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">Steyr Moments - Angebot</a><p></p></h3>
+		</nav>
+		<main>
+		<h2>Steyr am Nationalpark – natürlich romantisch!</h2>
+		<p>Steyr am Nationalpark, reich an Kultur, Industrie, Natur und Architektur ist eine lebens- und liebenswerte Kleinstadt. Die 1000-jährige Stadt liegt inmitten der Österreichischen Romantikstraße zwischen Salzburg und Wien und ist ein wahres Architekturjuwel. Am historischen Stadtplatz reihen sich Bürgerhäuser aus verschiedenen Stilepochen harmonisch aneinander.  Malerisch ist der Zusammenfluss von Enns und Steyr unterhalb des Schlosses, die beiden Flüsse bestimmen seit Jahrhunderten die Entwicklung der Stadt.
+Erleben Sie das besondere Flair der Stadt Steyr und überzeugen Sie sich selbst von der harmonischen Symbiose zwischen traditionsreicher Vergangenheit und pulsierender Gegenwart!
+		</p>
+		<p> 
+		</p>
+		<p align="center"><img src="bilder/zweifluesseestadt.jpg" alt="stift" hspace="15" height="170"> <img src="bilder/stadtplatz.jpg" alt="fischkalter" hspace="15" height="170"> <img src="bilder/panoramalift.jpg" alt="bibliothek" hspace="15" height="170"></p>
+		<h2>In Steyr ist immer was los - entscheiden Sie sich für eine dieser Aktivitäten:</h2>
+		<ul>
+		<li><b>Vom höchsten Turm in den tiefsten Keller</b><br>
+Begleiten Sie die Steyrer Nachtwächter auf Zeitreise in die Vergangenheit und lauschen Sie ihren Gschichtln und Anekdoten!</li>
+		<li><b>Steyr erschweben</b><br>
+Der Sprung vom Mittelalter ins Hightech-Zeitalter gelingt in Steyr mühelos beim lautlosen Schweben auf den Segways, den ultimativen Kult-Rollern! </li>
+		<li><b>Ein Eldorado für Naturliebhaber</b><br>
+In nur 30 Autominuten erreicht man das Besucherzentrum Ennstal, den idealen Ausgangspunkt für alle Touren in den Nationalpark Kalkalpen.</li>
+		<li><b>Advent in Steyr</b><br>
+		In der Adventzeit verwandelt sich Steyr zu Österreichs offizieller Christkindlstadt. Das Postamt und die Wallfahrtskirche in Christkindl, das Steyrer Kripperl oder das Weihnachtsmuseum mit Erlebnisbahn sind nur einige der vorweihnachtlichen Attraktionen.</li>
+		</ul>
+		<p align=center><img src="bilder/nationalpark kalkalpen.jpg" alt="kultur" hspace="15" height="185"> <img src="bilder/nachtwaechter.jpg" alt="kultur" hspace="15" height="185"> <img src="bilder/christkindl.jpg" alt="sternwarte" hspace="15" height="185"></p>
+		<h2 align=center>Es gibt viel zu entdecken bei uns, wir freuen uns auf Ihren Besuch!</h2>
+		</main>
+		<p align=right><a href="#"><img src="bilder/pfeil.png" alt="pfeil" height="50"></a></p>
+	</body>
 </html>
